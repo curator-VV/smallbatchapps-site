@@ -95,7 +95,7 @@
   <div>
     <p class="brand">Small Batch Apps</p>
     <h1>Tails &amp; Turf Privacy Policy</h1>
-    <p class="sub">Effective 9 September 2026</p>
+    <p class="sub">Effective 10 September 2026</p>
   </div>
 </div></div>
 <div class="wrap">
@@ -124,7 +124,8 @@
 <h2 id="collect">What we collect and why</h2>
 
 <h3>Everyone</h3>
-<p>The game keeps your progress &mdash; coins, level, sidekicks, trail progress, wardrobe, streak, achievements and your settings &mdash; <strong>on your device only</strong>. We do not have a copy. There is no cloud save and no server holding your game.</p>
+<p>The game keeps your progress &mdash; coins, level, sidekicks, trail progress, wardrobe, streak, achievements and your settings &mdash; on your device. If you play as a guest, that is the only copy anywhere.</p>
+<p>If you sign in, a copy of your saved game is also kept under your account on our servers (Google Firebase, in the United States) so it can follow you to another phone. Guests have no copy anywhere but their phone. Delete Account removes the server copy along with the account.</p>
 <p>The first time you open the game it creates a random identifier for your install. It is a random string generated on your phone, not a device identifier and not anything that identifies you as a person. It is used to tell one player's play from another's in the numbers described below.</p>
 
 <h3>Players 13 and over</h3>
@@ -146,7 +147,8 @@
 <ul>
   <li>Sign in with Apple is asked for <strong>no name and no email address</strong>. Apple returns only a stable identifier for you in this app, and that is all the game receives.</li>
   <li>Sign in with Google returns an account identifier from Google for your account.</li>
-  <li>The game stores, <strong>on your device</strong>, which service you used, that identifier, the date you linked it, and a note that you have made this choice. Nothing else about your provider account is stored, and none of it is sent anywhere by us.</li>
+  <li>The game stores, <strong>on your device</strong>, which service you used, that identifier, the date you linked it, and a note that you have made this choice. Nothing else about your provider account is stored.</li>
+  <li>Once signed in, your saved game is kept under your account on our servers so it can follow you to another phone. It holds the same things your phone holds: coins, level, sidekicks, trail progress, wardrobe, streak, settings and achievements. It never holds your name, email or anything from your Apple or Google account.</li>
 </ul>
 <p>You can sign in at any time from Settings, and you can sign out again &mdash; signing out unlinks the service and keeps everything you own.</p>
 
@@ -158,7 +160,7 @@
 
 <h2 id="device">What stays on your device</h2>
 <ul>
-  <li>Your whole game save: coins, level, sidekicks and their cards, trail progress, wardrobe, streak, achievements, and an in-progress match if you leave one.</li>
+  <li>Your whole game save: coins, level, sidekicks and their cards, trail progress, wardrobe, streak, achievements, and an in-progress match if you leave one. Signed-in players also have the server copy described above; guests do not.</li>
   <li>Your settings: sound, rumble, reduced motion, rival difficulty.</li>
   <li>Your answer to the age screen (see below).</li>
   <li>If you signed in: the provider and the account identifier described above.</li>
@@ -171,7 +173,7 @@
 <p>Three other companies are involved, and only in these ways:</p>
 <ul>
   <li><strong>Apple</strong> and <strong>Google Play</strong> &mdash; they distribute the app and they process purchases. What they collect when you buy something is covered by their own privacy policies, not by this one.</li>
-  <li><strong>Google (Firebase Analytics)</strong> &mdash; the analytics service described above, used only for players 13 and over. Google processes those events on our behalf, for our own measurement. We have not linked this app to Google's advertising products.</li>
+  <li><strong>Google (Firebase)</strong> &mdash; the analytics service described above, used only for players 13 and over, and the sign-in and saved-game storage for players who sign in. Google processes all of it on our behalf. We have not linked this app to Google's advertising products.</li>
   <li><strong>Apple</strong> or <strong>Google</strong> again, if you choose to sign in, in the way described above.</li>
 </ul>
 <p>We do not share your data with anyone else, and we do not receive data about you from anyone else.</p>
@@ -200,7 +202,7 @@
   <li>your trail progress, wardrobe, streak and daily rewards</li>
   <li>your settings</li>
   <li>your answer to the age screen</li>
-  <li>the random install identifier, and your sign-in link if you had one</li>
+  <li>the random install identifier, your sign-in link if you had one, and the server copy of your save if you were signed in</li>
 </ul>
 <p>The game then starts fresh with a brand-new random identifier.</p>
 
@@ -217,12 +219,13 @@
 <ul>
   <li><strong>On your device:</strong> your save and settings stay until you delete the app or use Delete Account. The local diagnostic log is capped in size and older entries are discarded automatically.</li>
   <li><strong>Analytics (13 and over):</strong> events are held by Google (Firebase Analytics) under the retention period set for this app in the Firebase console, and are then deleted by Google automatically.</li>
+  <li><strong>Saved games (signed-in players):</strong> kept under your account until you use Delete Account, which removes them.</li>
   <li><strong>Purchases:</strong> Apple and Google keep their own transaction records under their own policies. We do not hold any.</li>
 </ul>
 
 <h2 id="security">Security</h2>
 <p>Being straight about this: everything the analytics service sends is sent over an encrypted HTTPS connection, provided by the Google and Unity software the game uses &mdash; we do not run a server of our own and we did not write that transport. Your game save lives in the app's own private storage on your phone and is protected by your phone's own security, not by anything we add on top. It is not encrypted separately, and someone with full access to an unlocked, modified device could read it.</p>
-<p>Because there is no account server and no cloud copy of your game, there is also no server of ours that could be breached and expose it.</p>
+<p>Signed-in players' saved games sit in a Google Firebase database in the United States, readable and writable only by the signed-in account that owns them, under rules we publish to that database. Guests have nothing on any server.</p>
 
 <h2 id="changes">Changes to this policy</h2>
 <p>If the game starts collecting something new &mdash; a cloud save, an ad network, anything &mdash; we will update this page and change the effective date at the top before that version ships. If the change is a significant one, we will say so in the app.</p>
@@ -236,7 +239,7 @@
 
 <footer>
   <p class="links"><a href="privacy.html">Privacy Policy</a><a href="support.html">Support</a></p>
-  <p>Tails &amp; Turf &mdash; Small Batch Apps. Last updated 9 September 2026.</p>
+  <p>Tails &amp; Turf &mdash; Small Batch Apps. Last updated 10 September 2026.</p>
   <p class="legal">Small Batch Apps is a trading name of Vellum &amp; Vestige, LLC.</p>
 </footer>
 
